@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+.img {
+    width: calc(100% / 3 - 5px) ;
+    margin: -5px 0;
+}
+#name {
+    position: absolute;
+    font-family: 'Vibes', cursive;
+    color: #fff;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-40%);
+    font-size: 5rem;
+    animation: name 2s infinite reverse;
+}
+@keyframes name {
+    0%{
+        color: tomato;
+        transform: translate(-50%,-20%);
+    }
+    20%{
+        color: orange;
+        transform: translate(-52%,-25%);
+    }
+    40%{
+        color: yellow;
+        transform: translate(-54%,-22%);
+        letter-spacing: 5px;
+    }
+    60%{
+        color: lightgreen;
+        transform: translate(-55%,-25%);
+    }
+    80%{
+        color: greenyellow;
+        transform: translate(-52%,-20%);
+    }
+    100%{
+        color: indianred;
+        transform: translate(-50%,-20%);
+    }
+}
+p{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%,0);
+    font-size: 3rem;
+    animation: name 8s infinite reverse;
+
+}
+.right {
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+}
+.left {
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 0;
+}
+.copy{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 40px;
+    color: #fff;
+    margin: 20px;
+    cursor: pointer;
+}

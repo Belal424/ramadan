@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+/* font-family: 'Noto Nastaliq Urdu', serif;
+font-family: 'Vibes', cursive; */
+.content {
+    width: 80%;
+    margin: 0 10%;
+}
+body {
+    background-size: cover;
+    background-color: #000;
+}
+body::after{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/effect.png);
+    position: fixed;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.form{
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.8);
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 50vh;
+    border-radius: 25px;
+}
+.form h1 {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-weight: bolder;
+    transform: translate(0,-50%);
+    text-align: center;
+    color: #fff;
+}
+.form .cont{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.form input {
+    margin: 10px 0;
+    text-align: center;
+    background: transparent;
+    border-radius: 25px;
+    padding: 10px 50px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+@media (max-width: 775px){
+    .form{
+        width: 80%;
+        height: 30vh;
+    }
+}
+.themes {
+    padding: 25px 0;
+    z-index: -10;
+}
+.themes .the {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    grid-gap: 40px;
+    z-index: -3;
+}
+.themes .the .card{
+    width: calc(100 / 2);
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: #00000050 0px 0px 10px 0px;
+}
+.themes .the .card img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    z-index: -2;
+}
+label {
+    text-align: center;
+    color: red;
+    font-size: 15px;
+}
