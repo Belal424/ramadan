@@ -57,14 +57,14 @@ p{
 
 }
 .right {
-    height: 40%;
+    height: 30%;
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
     left: 0;
 }
 .left {
-    height: 40%;
+    height: 30%;
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
