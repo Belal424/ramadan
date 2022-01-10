@@ -14,7 +14,7 @@
 ${url} 
 لكتابة الاسم : 
 ${_main}`);
-     alert("تم النسخ")
+     alert("تم  النسخ");
 }
 function back() {
     var back = document.getElementById('back');
