@@ -7,6 +7,15 @@
 })();
  function fun() {
     var url_string = window.location;
+    var _main = window.location.host;
+    // var main_url = new URL(_main);
     var url = new URL(url_string);
-    navigator.clipboard.writeText(url);
+    navigator.clipboard.writeText(`رمضان كريم وكل عام وانت بخير :
+${url} 
+لكتابة الاسم : 
+${_main}`);
+}
+function back() {
+    var back = document.getElementById('back');
+    back.href = `https://${window.location.host}`;
 }

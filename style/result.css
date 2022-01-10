@@ -4,10 +4,17 @@
     box-sizing: border-box;
     font-family: 'Tajawal', sans-serif;
 }
-.img {
-    width: calc(100% / 3 - 5px) ;
-    margin: -5px 0;
-}
+body::before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/head.png);
+    position: fixed;
+    background-size: 40%;
+    background-repeat: repeat-x;
+} 
 #name {
     position: absolute;
     font-family: 'Vibes', cursive;
@@ -47,7 +54,7 @@
 }
 p{
     position: absolute;
-    bottom: 0;
+    bottom: 20%;
     left: 50%;
     text-align: center;
     width: 100%;
@@ -57,14 +64,14 @@ p{
 
 }
 .right {
-    height: 30%;
+    height: 40%;
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
     left: 0;
 }
 .left {
-    height: 30%;
+    height: 40%;
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
@@ -74,8 +81,33 @@ p{
     position: fixed;
     left: 0;
     bottom: 0;
-    font-size: 40px;
+    font-size: 60px;
     color: #fff;
     margin: 20px;
     cursor: pointer;
+}
+.back{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 60px;
+    color: #fff;
+    margin: 20px;
+    cursor: pointer;
+}
+@media (max-width: 760px){
+    body::before {
+        background-size: 70%;
+    }
+}
+@media (max-width: 550px){
+    .right , .left {
+        height: 20%;
+    }
+    p {
+        font-size: 2rem;
+    }
+    .back , .copy {
+        font-size: 40px;
+    }
 }
