@@ -23,9 +23,9 @@ body::before{
     font-family: 'Noto Nastaliq Urdu', serif;
     color: #fff;
     left: 50%;
-    top: 40%;
+    top: 30%;
     transform: translate(-50%,-40%);
-    font-size: 5rem;
+    font-size: 4rem;
     animation: name 2s infinite reverse;
 }
 @keyframes name {
