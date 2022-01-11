@@ -18,8 +18,9 @@ body::before{
 } 
 #name {
     position: absolute;
-    /*font-family: 'Vibes', cursive;*/
-    font-family: 'Amiri', serif;
+    /*font-family: 'Vibes', cursive;
+    font-family: 'Amiri', serif;*/
+    font-family: 'Noto Nastaliq Urdu', serif;
     color: #fff;
     left: 50%;
     top: 40%;
