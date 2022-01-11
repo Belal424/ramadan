@@ -16,7 +16,7 @@ messenger = document.getElementById('ms');
     ${url} 
     لكتابة الاسم : 
     ${_main}`;
-    messenger.href = `fb-messenger://share?text= كريم وكل عام وانت بخير :
+    messenger.href = `fb-messenger://share/?link=${url}?text= كريم وكل عام وانت بخير :
     ${url} 
     لكتابة الاسم : 
     ${_main}`
