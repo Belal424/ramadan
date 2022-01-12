@@ -24,5 +24,41 @@
         </div>
         </div>
     </div>
+       <div id="count">
+        <h2 id="title">: متبقي على رمضان </h2>
+        <p id="time"></p>
+    </div>
+    <script>
+    var end = new Date("04/01/2022 6:12 PM")  
+        _second = 1000,
+        _minute = _second * 60,
+        _hour = _minute * 60,
+        _day = _hour * 24,
+        _timer = document.getElementById('time'),
+        _title = document.getElementById('_title');
+        function timer(){
+            var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            _timer.innerHTML = 'رمضان كريم وكل عام اونتم بخير';
+            _title.style.display = "none";
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        _timer.innerHTML = ' يوم ' + days + ' | ';
+        _timer.innerHTML += ' ساعة ' + hours + ' | ';
+        _timer.innerHTML += ' دقيقة ' + minutes + ' | ';
+        _timer.innerHTML += ' ثانية ' + seconds;
+    }
+
+    timer = setInterval(timer, 1000);      
+    </script>
 </body>
 </html>
