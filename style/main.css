@@ -10,6 +10,10 @@ font-family: 'Vibes', cursive; */
     --main:#C04848;
     --secondary:#480048;
 }
+.warning-ads {
+text-align: center;
+color:#fff;
+}
 .content {
     width: 80%;
     margin: 0 10%;
